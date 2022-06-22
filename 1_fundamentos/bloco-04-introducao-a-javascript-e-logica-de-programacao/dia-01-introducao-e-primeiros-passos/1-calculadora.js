@@ -7,8 +7,8 @@ let multiplicacao = (a * b);
 let divisao = ( a / b);
 let modulo = (a % b);
 
-console.log(soma);
-console.log(subtracao);
-console.log(multiplicacao);
-console.log(divisao);
-console.log(modulo);
+console.log("A soma é: " + soma);
+console.log("A subtracao é: " + subtracao);
+console.log("A multiplicação é: " + multiplicacao);
+console.log("A divisão é: " + divisao);
+console.log("O múdulo é: " + modulo);
