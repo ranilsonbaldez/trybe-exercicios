@@ -93,6 +93,16 @@
       imagem.className = "small-image"; //cria  a classe para o elemento img
       imagem.src = 'https://picsum.photos/200'; //adiciona uma imagem
       tagSection2.appendChild(imagem); //coloca o elemento img como filho do elemento section(left)
+
+      //exercicio 8
+      const listaUl = document.createElement('ul'); //cria a variavel listaUl e adiciona um elemento ul
+      tagSection3.appendChild(listaUl); //coloca o elemento ul como filho do elemento section(right)
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'] //cris ums array com os valores
+      for (let num in arrayNumbers) {   //precorre a array de numeros
+        const elementosLi = document.createElement('li'); //cria a constante 'elementosLi' e adiciona a ela a lista li
+        elementosLi.innerHTML = arrayNumbers[num];  //a lista li recebe os valores da array de numeros
+        listaUl.appendChild(elementosLi);   //coloca o elemento li como filho do elemento ul
+      }
     </script>
   </body>
 </html>
