@@ -58,20 +58,24 @@
   <body>
     <script>
       //exercicio 1
-      const elementH1 = document.createElement("h1");           //cria a variável 'elementH1' e adiciona um novo elemento h1
-      elementH1.innerText = "Exercício 5.2 - JavaScript DOM";   //insere um texto na variável 'elementH1'
-      document.body.appendChild(elementH1);                     //adiciona h1 como filho da tag 'body'
+      const elementH1 = document.createElement("h1"); //cria a variável 'elementH1' e adiciona um novo elemento h1
+      elementH1.innerText = "Exercício 5.2 - JavaScript DOM"; //insere um texto na variável 'elementH1'
+      document.body.appendChild(elementH1); //adiciona h1 como filho da tag 'body'
 
       //exercicio 2
-      const tagMain = document.createElement('main');            //cria a variável 'tagMain' e adiciona um novo elemento main
-      tagMain.className = 'main-content';                        //cria a classe para o elemento main
-      document.body.appendChild(tagMain);                        //adiciona main como filho da tag 'body'
+      const tagMain = document.createElement("main"); //cria a variável 'tagMain' e adiciona um novo elemento main
+      tagMain.className = "main-content"; //cria a classe para o elemento main
+      document.body.appendChild(tagMain); //adiciona main como filho da tag 'body'
 
       //exercicio 3
-      const tagSection = document.createElement('section');       //cria a variável 'tagSection' e adiciona um novo elemento section
-tagSection.className = 'center-content';                          //cria a classe para o elemento section
-      tagMain.appendChild(tagSection);                            //adiciona section como filho da tag main
+      const tagSection = document.createElement("section"); //cria a variável 'tagSection' e adiciona um novo elemento section
+      tagSection.className = "center-content"; //cria a classe para o elemento section
+      tagMain.appendChild(tagSection); //adiciona section como filho da tag main
 
+      //exercicio 4
+      const tagP = document.createElement('p');
+      tagP.innerText = 'Esse é um parágrafo.';
+      tagSection.appendChild(tagP);
     </script>
   </body>
 </html>
