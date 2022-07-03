@@ -55,6 +55,7 @@
       }
     </style>
   </head>
+
   <body>
     <script>
       //exercicio 1
@@ -73,9 +74,14 @@
       tagMain.appendChild(tagSection); //adiciona section como filho da tag main
 
       //exercicio 4
-      const tagP = document.createElement('p');
-      tagP.innerText = 'Esse é um parágrafo.';
-      tagSection.appendChild(tagP);
+      const tagP = document.createElement("p"); //cria a variável 'tagP' e adiciona um novo elemento p
+      tagP.innerText = "Esse é um parágrafo."; //insere um texto no elemento p
+      tagSection.appendChild(tagP); //adiciona p como filho da tag section
+
+      //exercicio 5
+      const tagSection2 = document.createElement("section"); //cria a variável 'tagSection2' e adiciona um novo elemento section
+      tagSection.className = "left-content"; //cria a classe para o elemento section
+      tagMain.appendChild(tagSection2); //adiciona section como filho da tag main
     </script>
   </body>
 </html>
