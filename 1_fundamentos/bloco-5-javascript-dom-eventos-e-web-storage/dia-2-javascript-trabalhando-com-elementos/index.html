@@ -103,6 +103,14 @@
         elementosLi.innerHTML = arrayNumbers[num];  //a lista li recebe os valores da array de numeros
         listaUl.appendChild(elementosLi);   //coloca o elemento li como filho do elemento ul
       }
+
+      //exercicio 9
+      for (index = 1; index <= 3; index += 1) { //laço para percorrer da posição 1 a 3
+        const elementH3 = document.createElement("h3"); //cria a variavel elementH3 e adiciona o elemento h3
+        elementH3.innerHTML = 'Tag(h3) ' + index;   //insere um texto em cada corpo da tag
+        tagMain.appendChild(elementH3) ;    //coloca as tags h3 como filhas da tag main
+      }
+
     </script>
   </body>
 </html>
